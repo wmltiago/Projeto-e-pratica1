@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Sistema de Gestão Academica - ACAD</title>
+<link rel="stylesheet" type="text/css" href="../css/academico.css"></link>
+<script &lt;script language="JavaScript" type="text/javascript" src="../javaScript/MascaraValidacao.js"></script>
+</head>
+
+<body>
+<div id="corpo">
+<div id="bordatotal">
+
+<center>
+<div id="borda-foto">
+<div id="borda-foto">
+			<img src="../logotipo.jpg" height=150 />
+</div>
+</div>
+</center>
+
+<h1>Sistema de Gestão Academica - ACAD</h1>
+</body>
+<br>
+
+<p><h2><a href="..\[secretaria]/menu_secretaria.html">Secretaria</a> :: Cadastrar professor</h2></P>
+<br>
+
+<form name="form1" action="destino.php" method="post" name="cadastro">
+<div>
+                 <fieldset><legend><b>Dados pessoais do professor</b></legend>
+	                 <label>Nome</label><input type="text" name="nome" id="nome" >
+	                 <label>CPF</label><input type="text" name="cpf" name="cpf" onBlur="ValidarCPF(form1.cpf);" onKeyPress="MascaraCPF(form1.cpf);" maxlength="14">
+					 <label>E-mail</label><input type="text" name="email" id="email" >
+					 <label>RG</label><input type="text" type="text" id="rg" maxlength="9" onKeyPress="MascaraRG(form1.rg);">
+					 <label>Telefone</label><input type="text" name="tel" onKeyPress="MascaraTelefone(form1.tel);" maxlength="14"  onBlur="ValidaTelefone(form1.tel);"><br><br>
+					 <label>Endereço</label><input type="text" name="endereço">
+					 <br>
+				</fieldset>	
+</div>9
+<br>		
+<div>					
+ <fieldset><legend><b>Dados Profissionais</b></legend>
+	                      <label>Cargo</label>
+<br>
+<select name="disciplina" multiple>
+	                  <option>Segurança de sistemas</option>
+	                  <option>Banco de dados</option>
+					  <option>POO</option>
+					  <option>WEB1</option>
+					  <option>Ética</option>
+					  <option>Projeto e prática 1</option>
+					  <option>Sistemas operaciona</option>
+</select>
+</fieldset>
+</div>
+
+<br>
+                 <input type="submit" name="envia" value="Salvar" onclick="return validaForm()" >
+                 <input type="reset" name="limpa" value="Limpar">
+ </form>
+<br>
+
+<h3><p align="right"><a href="..\[academico]/index.html">Menu principal</a></p></h3>
+</div>
+</div>
+</body>
+</html>

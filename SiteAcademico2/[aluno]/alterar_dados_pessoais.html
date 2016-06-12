@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Sistema de Gestão Academica - ACAD</title>
+<link rel="stylesheet" type="text/css" href="../css/academico.css"></link>
+<script &lt;script language="JavaScript" type="text/javascript" src="../javaScript/MascaraValidacao.js"></script>
+</head>
+
+<body>
+<div id="corpo">
+<div id="bordatotal">
+
+<center>
+<div id="borda-foto">
+<div id="borda-foto">
+			<img src="../logotipo.jpg" height=150 />
+</div>
+</div>
+</center>
+
+<h1>Sistema de Gestão Academica - ACAD</h1>
+
+<br>
+
+
+<h2><p><a href="..\[aluno]/menu_aluno.html">Aluno</a> :: Alterar dados pessoais</p></h2>
+<br>
+
+<form action="destino.php" method="post" name="cadastro">
+<div>
+                 <fieldset><legend><b>Dados pessoais do aluno</b></legend>
+	                 <label>Nome</label><input type="text" name="nome" id="nome">
+	                 <label>CPF</label><input type="text" name="cpf" maxlength=14 minlength=12>
+					 <label>E-mail</label><input type="text" name="email" id="email">
+					 <label>RG</label><input type="text" name="rg" maxlength=7 minlength=7><br>
+					 <label>Telefone</label><input type="text" name="telefone" maxlength=11 minlength=11>
+					 <label>Endereço</label><input type="text" name="endereço">
+					 <br>
+				</fieldset>
+</div>				
+<br><div>
+                 <input type="submit" name="envia" value="Salvar" onclick="return validaForm()">
+                 <input type="reset" name="limpa" value="Limpar">
+</div>
+</form>
+
+<h3><p align="right"><a href="..\[academico]/index.html">Menu principal</a></p></h3>
+</div>
+</div>
+</body>
+</html>
